@@ -17,8 +17,12 @@ namespace RedisPubSub.ConsoleConsumer
 
         protected override void OnMessage(string channel, string message)
         {
-            var evt = _serializer.Deserialize<HelloWorldEvent>(encoding.GetBytes(message));
-            Handle(evt).ConfigureAwait(false);
+            var type = Type.GetType(channel);
+            if (type == typeof(HelloWorldEvent))
+            {
+                var evt = _serializer.Deserialize<HelloWorldEvent>(encoding.GetBytes(message));
+                Handle(evt ).ConfigureAwait(false);
+            }
         }
 
         public Task Handle(HelloWorldEvent message)
