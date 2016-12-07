@@ -1,0 +1,19 @@
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "emitEntryPoint": true
+  },
+
+  "dependencies": {
+    "NServiceBus": "6.0.4",
+    "Server": "1.0.0-*"
+  },
+
+  "frameworks": {
+    "net462": {
+      "frameworkAssemblies": {
+        "System.Configuration": "4.0.0.0"
+      }
+    }
+  }
+}

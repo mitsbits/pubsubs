@@ -9,6 +9,11 @@ Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "RedisPubSub.ConsolePublishe
 EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "RedisPubSub.ConsoleConsumer", "RedisPubSub.ConsoleConsumer\RedisPubSub.ConsoleConsumer.xproj", "{8E147FDB-41C0-41CF-9D3E-8843487BD26E}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{24A11F20-A4CD-42C5-B93A-FF3072311FC5}"
+	ProjectSection(SolutionItems) = preProject
+		global.json = global.json
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU

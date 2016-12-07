@@ -1,0 +1,16 @@
+{
+  "version": "1.0.0-*",
+  "buildOptions": {
+    "emitEntryPoint": true
+  },
+
+  "dependencies": {
+    "NServiceBus": "6.0.4",
+    "Shared": "1.0.0-*"
+  },
+
+  "frameworks": {
+    "net462": {
+    }
+  }
+}
